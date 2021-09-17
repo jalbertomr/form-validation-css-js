@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation with Javascript</title>
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <main>
+      <form action="" class="formulary" id="formulary">
+
+      <!-- --- user group --- -->
+      <div class="formulary__group" id="group__user">
+        <label for="user" class="formulary__label">User</label>
+        <div class="formulary__group-input">
+          <input type="text" class="formulary__input" name="user" id="user" placeholder="user">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">The user must have between 4 and 16 digits of numbers, leters and '_'.</p>
+      </div>
+
+      <!-- --- name group --- -->
+      <div class="formulary__group" id="group__name">
+        <label for="name" class="formulary__label">Name</label>
+        <div class="formulary__group-input">
+          <input type="text" class="formulary__input" name="name" id="name" placeholder="name">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">The name must have between 4 and 16 digits of numbers, leters and '_'.</p>
+      </div>
+
+      <!-- --- password group --- -->
+      <div class="formulary__group" id="group__password">
+        <label for="password" class="formulary__label">Password</label>
+        <div class="formulary__group-input">
+          <input type="password" class="formulary__input" name="password" id="password">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">The password must have between 4 and 12 digits..</p>
+      </div>
+
+      <!-- --- password2 group --- -->
+      <div class="formulary__group" id="group__password2">
+        <label for="password2" class="formulary__label">Repeat Password</label>
+        <div class="formulary__group-input">
+          <input type="password" class="formulary__input" name="password2" id="password2">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">Both passwords must be the same.</p>
+      </div>
+
+      <!-- --- email group --- -->
+      <div class="formulary__group" id="group__email">
+        <label for="email" class="formulary__label">email</label>
+        <div class="formulary__group-input">
+          <input type="text" class="formulary__input" name="email" id="email" placeholder="email@email.com">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">The email must have between 4 and 16 digits of numbers, leters and '_'.</p>
+      </div>
+
+    <!-- --- telephone group --- -->
+      <div class="formulary__group" id="group__telephone">
+        <label for="telephone" class="formulary__label">Telephone</label>
+        <div class="formulary__group-input">
+          <input type="text" class="formulary__input" name="telephone" id="telephone" placeholder="1234567890">
+          <i class="formulary_valid-state fas fa-times-circle"></i>
+        </div>
+        <p class="formulary__input-error">The telephone must have max 16 digits.</p>
+      </div>
+
+    <!-- --- Terms and Conditions --- -->
+       <div class="formulary__group formulary__group-terms">
+         <label class="formulary__label">
+           <input class="formulary__checkbox" type="checkbox" name="terms" id="terms">
+           I´m accept terms and conditions.
+         </label>
+       </div>
+
+       <div class="formulary__message" id="formulary__message">
+       <p><i class="fas fa-exclamation-triangle"></i> <b>Error</b> Please, check your data and accept terms.</p>
+       </div>
+
+        <div class="formulary__group formulary__group-btn-submit">
+          <button type="submit" class="formulary__btn">Submit</button>
+          <p class="formulary__message-success" id="formulary__message-success">Data send Successfully!.</p>
+        </div>
+      </form>
+    </main>
+    <script src="./js/forms.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script></body>
+</html>
